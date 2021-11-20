@@ -1,4 +1,6 @@
-// https://www.codecademy.com/courses/introduction-to-javascript/projects/magic-eight-ball-1
+/* Magic Eight Ball 
+https://www.codecademy.com/courses/introduction-to-javascript/projects/magic-eight-ball-1
+*/
 
 let userName = '';
 userName ? console.log(`Hello, ${userName}!`) : console.log('Hello!');
@@ -6,6 +8,14 @@ const userQuestion = 'Will I become a superstar tonight?';
 console.log(userQuestion);
 const randomNumber = Math.floor(Math.random() * 8);
 
+
+// my solution 
+
+const answers = ['It is certain', 'It is decidedly so','Reply hazy try again','Cannot predict now','Do not count on it','My sources say no','Outlook not so good','Signs point to yes']
+console.log(answers[randomNumber]);
+
+  
+/*
 switch (randomNumber) {
   case 0:
     eightBall = 'It is certain';
@@ -36,5 +46,6 @@ switch (randomNumber) {
     break; 
   // additional cases...
 }
+*/
 
-console.log(`The eight ball answered: ${eightBall}`); 
+// console.log(`The eight ball answered: ${eightBall}`)
