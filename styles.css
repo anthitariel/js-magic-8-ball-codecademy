@@ -1,0 +1,141 @@
+* {
+    font-size: 90%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10%;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Pacifico', cursive;
+    margin-right: 0.5%;
+    font-size: 3rem;
+    color: #27333f;
+    transition: color 0.3s;
+}
+
+h1:hover {
+    color: #ff8c00;
+}
+
+.container {
+    border-radius: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0% auto;
+    width: 50%;
+}
+
+.input-container {
+    margin-top: 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+}
+
+input {
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 1rem;
+    width: 80%;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+button {
+    background-color: #4db250;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1%;
+    width: 20%;
+    padding: 1%;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+}
+
+button:hover {
+    background-color: #2e6b30;
+}
+
+.magic-ball-container {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.magic-ball-result {
+    width: 25rem;
+    height: 25rem;
+    background-color: #ffe666;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 5%;
+}
+
+.magic-ball-result:hover {
+    background-color: #ffd601;
+}
+
+.user-question {
+    margin-top: 5%;
+    width: 80%;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 425px) {
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        padding: 5% 0;
+        width: 100%;
+    }
+
+    .input-container {
+        flex-direction: column;
+    }
+
+    input {
+        width: auto;
+        font-size: 1rem;
+    }
+
+    button {
+        width: 100%;
+        height: 3rem;
+        margin-top: 3%;
+    }
+
+    .user-question {
+        font-size: 0.8rem;
+    }
+
+    .magic-ball-result {
+        width: 15rem;
+        height: 15rem;
+        font-size: 0.9rem;
+    }
+}
