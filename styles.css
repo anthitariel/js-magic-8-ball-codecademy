@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Graphik Trial', sans-serif;
 }
 
 .header {
@@ -12,7 +12,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 10%;
+    margin-top: 3rem;
 }
 
 h1 {
@@ -25,7 +25,7 @@ h1 {
 }
 
 h1:hover {
-    color: #ff8c00;
+    color: darkviolet;
 }
 
 .container {
@@ -50,12 +50,12 @@ input {
     outline: none;
     padding: 1rem;
     width: 80%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     border-radius: 0.5rem;
 }
 
 button {
-    background-color: #4db250;
+    background-color: darkviolet;
     color: white;
     border: none;
     cursor: pointer;
@@ -71,7 +71,7 @@ button {
 }
 
 button:hover {
-    background-color: #2e6b30;
+    background-color: indigo;
 }
 
 .magic-ball-container {
@@ -80,21 +80,49 @@ button:hover {
     flex-direction: column;
 }
 
+.magic-ball-result:before {
+    content: '8';
+    display: block;
+    font-size: 10rem;
+    font-weight: bold;
+    color: black;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    text-align: center;
+    line-height: 10rem;
+}
+
+.magic-ball-result.show-number:before {
+    display: block; 
+}
+
+.magic-ball-result.reset:before,
+.magic-ball-result:not(.show-number):before {
+    display: none;
+}
+
 .magic-ball-result {
-    width: 25rem;
-    height: 25rem;
-    background-color: #ffe666;
+    font-family: 'Digital-7', sans-serif;
+    width: 28rem;
+    height: 28rem;
+    background-color: black;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem;
+    text-align: center;
+    font-size: 2em;
     font-weight: bold;
+    color: white;
+    box-shadow: 0 0 5rem rgba(128, 121, 121, 0.5);
     padding: 5%;
 }
 
 .magic-ball-result:hover {
-    background-color: #ffd601;
+    background-color: darkviolet; 
 }
 
 .user-question {
