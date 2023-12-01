@@ -124,7 +124,8 @@ button:hover {
 }
 
 .magic-ball-result:hover {
-    background-color: darkviolet; 
+    background-color: darkviolet;
+    transform: scale(1.05);
 }
 
 .user-question {
