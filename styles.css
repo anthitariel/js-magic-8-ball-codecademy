@@ -85,16 +85,16 @@ button:hover {
 .magic-ball-result:before {
     content: '8';
     display: block;
-    font-size: 10rem;
+    font-size: 14rem;
     font-weight: bold;
     color: black;
     background-color: #fff;
     border: 2px solid #fff;
     border-radius: 50%;
-    width: 10rem;
-    height: 10rem;
+    width: 16rem;
+    height: 16rem;
     text-align: center;
-    line-height: 10rem;
+    line-height: 18rem;
 }
 
 .magic-ball-result.show-number:before {
@@ -108,8 +108,8 @@ button:hover {
 
 .magic-ball-result {
     font-family: 'Digital-7', sans-serif;
-    width: 28rem;
-    height: 28rem;
+    width: 30rem;
+    height: 30rem;
     background-color: black;
     border-radius: 50%;
     display: flex;
@@ -161,12 +161,20 @@ button:hover {
     }
 
     .user-question {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     .magic-ball-result {
-        width: 15rem;
-        height: 15rem;
+        width: 18rem;
+        height: 18rem;
         font-size: 0.9rem;
+    }
+
+    .magic-ball-result:before {
+        font-size: 8rem;
+        width: 8rem;
+        height: 8rem;
+        text-align: center;
+        line-height: 9rem;
     }
 }
