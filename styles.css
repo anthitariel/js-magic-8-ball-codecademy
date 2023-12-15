@@ -7,7 +7,13 @@ body {
     font-family: 'Graphik Trial', sans-serif;
     letter-spacing: normal;
     line-height: 1.5rem;
-}
+    /* background-color: #FFD700; */
+    background: hsla(51, 100%, 50%, 1);
+    background: radial-gradient(circle, hsla(51, 100%, 50%, 1) 0%, hsla(50, 41%, 77%, 1) 100%);
+    background: -moz-radial-gradient(circle, hsla(51, 100%, 50%, 1) 0%, hsla(50, 41%, 77%, 1) 100%);
+    background: -webkit-radial-gradient(circle, hsla(51, 100%, 50%, 1) 0%, hsla(50, 41%, 77%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFD700", endColorstr="#DCD4AC", GradientType=1 );
+ }
 
 .header {
     display: flex;
